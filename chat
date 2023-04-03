@@ -23,6 +23,10 @@
 	}
 </style>
 
+    <a id="liveagent_button_online_5735e0000011LQ2" href="javascript://Chat" style="display: none;"
+        onclick="liveagent.startChat('5735e0000011LQ2')"><!-- Conteúdo do chat on-line --></a>
+    <div id="liveagent_button_offline_5735e0000011LQ2" style="display: none;"><!-- Conteúdo do chat off-line --></div>
+
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
@@ -74,6 +78,25 @@
 	} else {
 		initESW('https://service.force.com');
 	}
+	
+	
+	 if (!window._laq) { window._laq = []; }
+        window._laq.push(function () {
+            liveagent.showWhenOnline('5735e0000011LQ2', document.getElementById('liveagent_button_online_5735e0000011LQ2'));
+            liveagent.showWhenOffline('5735e0000011LQ2', document.getElementById('liveagent_button_offline_5735e0000011LQ2'));
+        });
 </script>
 
 </html>
+
+
+
+
+
+
+    <script type="text/javascript">
+        if (!window._laq) { window._laq = []; }
+        window._laq.push(function () {
+            liveagent.showWhenOnline('5735e0000011LQ2', document.getElementById('liveagent_button_online_5735e0000011LQ2'));
+            liveagent.showWhenOffline('5735e0000011LQ2', document.getElementById('liveagent_button_offline_5735e0000011LQ2'));
+        });</script>
